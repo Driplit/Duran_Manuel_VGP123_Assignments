@@ -34,6 +34,8 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.J)) Jump();
+        if (Input.GetKeyDown(KeyCode.K)) Attack();
         horInput = Input.GetAxis("Horizontal");
         //going up or down
         float verVelocity = rb.velocity.y;
@@ -75,6 +77,14 @@ public class PlayerMovement : MonoBehaviour
         }
             
     }
+    void Attack()
+    {
+        if (isGrounded())
+        {
+            anim.SetTrigger("Attack");
+        }
+
+    }
     void OnCollisionEnter2D(Collision2D collision) 
     {
     }
@@ -102,8 +112,6 @@ public class PlayerMovement : MonoBehaviour
             isWallSliding = false;
         }
     }
-    //ATTACK
-    // public bool canAttack()
-    //    { return horInput == 0&& isGrounded() && !onWall(); }
+ 
 
 }
