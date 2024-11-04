@@ -38,7 +38,7 @@ public class PlayerController : MonoBehaviour
 
         if (curPlayingClips.Length > 0)
         {
-            if (!(curPlayingClips[0].clip.name == "Fire"))
+            if (!(curPlayingClips[0].clip.name == "Player_Dash_Attack"))
             {
                 rb.velocity = new Vector2(hInput * speed, rb.velocity.y);
             }
@@ -49,7 +49,7 @@ public class PlayerController : MonoBehaviour
         if (hInput != 0) sr.flipX = (hInput < 0);
 
         //inputs for firing and jump attack
-        if (Input.GetButtonDown("Fire1") && isGrounded) anim.SetTrigger("fire");
+        if (Input.GetButtonDown("Fire1") && isGrounded) anim.SetTrigger("Attack");
         
         //Jump attack will need later
         //if (Input.GetButtonDown("Fire1") && !isGrounded) anim.SetTrigger("jumpAttack");
