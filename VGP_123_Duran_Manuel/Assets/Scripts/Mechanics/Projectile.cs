@@ -6,6 +6,7 @@ using UnityEngine;
 public class Projectile : MonoBehaviour
 {
     [SerializeField, Range(1, 50)] private float lifetime;
+    [SerializeField, Range(1, 10)] private float speed;
 
     // Start is called before the first frame update
     void Start()
@@ -16,6 +17,6 @@ public class Projectile : MonoBehaviour
 
     public void SetVelocity(Vector2 velocity)
     {
-        GetComponent<Rigidbody2D>().velocity = velocity;
+        GetComponent<Rigidbody2D>().velocity = velocity * speed;
     }
 }

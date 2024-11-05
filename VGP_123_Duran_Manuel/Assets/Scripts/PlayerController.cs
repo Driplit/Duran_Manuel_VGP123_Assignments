@@ -38,9 +38,13 @@ public class PlayerController : MonoBehaviour
 
         if (curPlayingClips.Length > 0)
         {
-            if (!(curPlayingClips[0].clip.name == "Player_Dash_Attack"))
+            if (!(curPlayingClips[0].clip.name == "Player_Attack"))
             {
                 rb.velocity = new Vector2(hInput * speed, rb.velocity.y);
+            }
+            else 
+            {
+                rb.velocity = new Vector2(hInput * speed, 0);
             }
 
         }
@@ -79,4 +83,8 @@ public class PlayerController : MonoBehaviour
     {
         return rb.velocity.y > 0;
     }
+    //bool HasDager()
+    //{
+    //    return IInventory.
+    //}
 }
