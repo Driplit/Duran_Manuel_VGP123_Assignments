@@ -50,10 +50,9 @@ public class PlayerController : MonoBehaviour
 
         //inputs for firing and jump attack
         if (Input.GetButtonDown("Fire1") && isGrounded) anim.SetTrigger("Attack");
-        
-        //Jump attack will need later
-        //if (Input.GetButtonDown("Fire1") && !isGrounded) anim.SetTrigger("jumpAttack");
 
+        //Jump attack will need later
+        if (Input.GetButtonDown("Fire2")) anim.SetTrigger("ThrowAttack");
         //alternate way to sprite flip
         //if (hInput > 0 && sr.flipX || hInput < 0 && !sr.flipX) sr.flipX = !sr.flipX;
 

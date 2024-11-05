@@ -10,6 +10,7 @@ public class Projectile : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if (lifetime <= 0) lifetime = 2;
         Destroy(gameObject, lifetime);
     }
 
