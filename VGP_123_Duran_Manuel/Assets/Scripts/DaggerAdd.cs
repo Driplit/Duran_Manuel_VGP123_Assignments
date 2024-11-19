@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class DaggerAdd : MonoBehaviour
 {
-
+    
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

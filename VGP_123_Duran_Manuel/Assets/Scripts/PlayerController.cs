@@ -12,14 +12,22 @@ public class PlayerController : MonoBehaviour
     SpriteRenderer sr;
     Animator anim;
     GroundCheck gc;
+    WallCheck wc;
+    WallSlide ws;
+    LedgeCheck lc;
 
     //Movement variables
     [Range(3, 10)]
     public float speed = 5.5f;
     [Range(3, 10)]
     public float jumpForce = 3f;
+    
+
 
     public bool isGrounded = false;
+    public bool isSliding = false;
+    public bool isLedged = false;
+    //public bool isWalled = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,13 +35,18 @@ public class PlayerController : MonoBehaviour
         sr = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
         gc = GetComponent<GroundCheck>();
+        wc = GetComponent<WallCheck>();
+        lc =  GetComponent<LedgeCheck>();
     }
 
     // Update is called once per frame
     void Update()
     {
         AnimatorClipInfo[] curPlayingClips = anim.GetCurrentAnimatorClipInfo(0);
-        CheckIsGrounded();
+        IsGrounded();
+        
+        
+
         float hInput = Input.GetAxis("Horizontal");
 
         if (curPlayingClips.Length > 0)
@@ -62,19 +75,38 @@ public class PlayerController : MonoBehaviour
 
         anim.SetBool("Run", hInput != 0);
         anim.SetBool("Grounded", isGrounded);
-        anim.SetBool("Falling",IsFalling());
-        anim.SetBool("Rising",IsRising());
-        
+        anim.SetBool("Falling",IsFalling() && !isGrounded);
+        anim.SetBool("Rising",IsRising() && !isGrounded);
+        anim.SetBool("OnWall", isSliding);
+        //anim.SetBool("LedgeGrab", isLedged);
+
+
     }
 
-    void CheckIsGrounded()
+    private void IsGrounded()
     {
         if (!isGrounded)
         {
             if (rb.velocity.y <= 0) isGrounded = gc.IsGrounded();
         }
-        else isGrounded = gc.IsGrounded();
+        else isGrounded = gc.IsGrounded(); 
     }
+    private void IsWalled()
+    {
+        if (!isSliding)
+        {
+            if (rb.velocity.y <= 0) isSliding = wc.IsWalled();
+        }
+        else isSliding = wc.IsWalled();
+    }
+    //private void IsLedged()
+    //{
+    //    if (!isLedged)
+    //    {
+    //        if(rb.velocity.y <= 0) isLedged = lc.IsLedged();
+    //    }
+    //    else isLedged = lc.IsLedged();
+    //}
     bool IsFalling()
     {
         return rb.velocity.y < 0;
@@ -83,6 +115,8 @@ public class PlayerController : MonoBehaviour
     {
         return rb.velocity.y > 0;
     }
+
+
     //bool HasDager()
     //{
     //    return IInventory.

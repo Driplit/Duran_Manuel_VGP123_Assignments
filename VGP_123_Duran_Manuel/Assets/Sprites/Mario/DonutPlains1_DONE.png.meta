@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d027f644f6a259b40959f87eefb67abb
+guid: a7bdae2aca161ba45878c9fdf869d420
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -39,18 +39,18 @@ TextureImporter:
     mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: 1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
-  spriteExtrude: 1
-  spriteMeshType: 1
+  spriteExtrude: 0
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 20
+  spritePixelsToUnits: 200
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 1
+  spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -69,8 +69,8 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
+    maxTextureSize: 16384
+    resizeAlgorithm: 1
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
@@ -123,337 +123,295 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sword_0
+      name: DonutPlains1_DONE_0
       rect:
         serializedVersion: 2
-        x: 39
-        y: 332
-        width: 19
-        height: 7
+        x: 0
+        y: 186
+        width: 5113
+        height: 431
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3d3e1d625e7a3ea4080cce60c4d4e270
-      internalID: -1377788306
+      spriteID: c3f2366e6cb5a65459f203c03f3b7bd5
+      internalID: -1758975080
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sword_1
+      name: Coin1
       rect:
         serializedVersion: 2
-        x: 135
-        y: 332
-        width: 19
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 19
+        y: 134
+        width: 16
+        height: 25
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 89237006030c7a54b8109078d7f13c63
-      internalID: 664481018
+      spriteID: e07b5b5b2f4665748a5b5c41dc71e202
+      internalID: -2001089823
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sword_2
+      name: coin2
       rect:
         serializedVersion: 2
-        x: 231
-        y: 332
-        width: 19
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 64
+        y: 139
+        width: 8
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e7be767a56aeb1346b50e9b391a945be
-      internalID: 1435870532
+      spriteID: e23884bcef8cf174db3b15fdc047621c
+      internalID: -1675039939
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sword_3
+      name: DonutPlains1_DONE_3
       rect:
         serializedVersion: 2
-        x: 327
-        y: 332
-        width: 19
-        height: 7
+        x: 104
+        y: 139
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7f92438d20147d34198ee3087406442e
-      internalID: -366003885
+      spriteID: 419840a2b489eb349a51daaf159a86d4
+      internalID: 431505779
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sword_4
-      rect:
-        serializedVersion: 2
-        x: 39
-        y: 236
-        width: 19
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1b598d68a228e1943be7630579dcf91c
-      internalID: -1815462673
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sword_5
-      rect:
-        serializedVersion: 2
-        x: 135
-        y: 236
-        width: 19
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8d335c8cb2d816f4cb4011c5b9d1502f
-      internalID: 431815444
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sword_6
-      rect:
-        serializedVersion: 2
-        x: 231
-        y: 236
-        width: 19
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 75ea2b1f9d81d6f499617a985f646733
-      internalID: -1924084094
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sword_7
-      rect:
-        serializedVersion: 2
-        x: 327
-        y: 236
-        width: 19
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ce39a0086e5f21244bfc2e59464f34bb
-      internalID: -1201057078
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sword_8
-      rect:
-        serializedVersion: 2
-        x: 39
-        y: 137
-        width: 19
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1e3fa3a6ab106094189bf3fe50bd56f0
-      internalID: 380396135
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sword_9
+      name: DonutPlains1_DONE_4
       rect:
         serializedVersion: 2
         x: 138
-        y: 134
-        width: 14
-        height: 19
+        y: 141
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 86f2b6aba2cf62049b5dc4561af633db
-      internalID: 1349187142
+      spriteID: aa8b85d1b10cc5140bbfbf53d72503e6
+      internalID: -545450068
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sword_10
+      name: DonutPlains1_DONE_5
       rect:
         serializedVersion: 2
-        x: 231
-        y: 136
-        width: 19
-        height: 14
+        x: 172
+        y: 143
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ee666230be2861f4b964f5f3a6bc0b67
-      internalID: -496038736
+      spriteID: ff0615277e6cb8041a8e6b6b6af7db7e
+      internalID: 1607940295
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sword_11
+      name: Blue
       rect:
         serializedVersion: 2
-        x: 329
-        y: 134
-        width: 14
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 241
+        y: 147
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 933f5231dc9c30247b1b477a8b5ac59c
-      internalID: 1901571339
+      spriteID: 381a41458d300f5418c657192495eb83
+      internalID: 761084936
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sword_12
+      name: DonutPlains1_DONE_7
       rect:
         serializedVersion: 2
-        x: 53
-        y: 45
-        width: 11
-        height: 9
+        x: 334
+        y: 25
+        width: 48
+        height: 145
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 19634801f0228324b91d7394e1fe9e2a
-      internalID: 1160684771
+      spriteID: 0d7a77ab2c060ec418c14359ba748288
+      internalID: -1804461436
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sword_13
+      name: DonutPlains1_DONE_8
       rect:
         serializedVersion: 2
-        x: 147
-        y: 42
-        width: 13
+        x: 430
+        y: 65
+        width: 27
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 618073d82feb8bd4e9646b807d896522
+      internalID: -684189139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DonutPlains1_DONE_9
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 84
+        width: 8
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51e92a9b1cd053b49b421ca85094785d
+      internalID: 400228368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 116
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce7bac933489cb04bab1c97b580de232
+      internalID: 977498685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Key
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 103
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb38f1fd713b1e248bc924b59647ca83
+      internalID: -420958382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 84
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d903bfd8becf1240b73b2c2cf96ab50
+      internalID: 1908881513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DonutPlains1_DONE_13
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 0
+        width: 24
         height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ccbcb412630b72142af0188499c4c0b3
-      internalID: 491956569
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sword_14
-      rect:
-        serializedVersion: 2
-        x: 242
-        y: 45
-        width: 14
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 61cb22524e1f3b84baf7cdc6ab7c5c18
-      internalID: 1984035967
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sword_15
-      rect:
-        serializedVersion: 2
-        x: 338
-        y: 44
-        width: 14
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 31fe112dce000d041bbbc6e08fe3628e
-      internalID: 562675438
+      spriteID: bf47ba779da805544835892945019cb5
+      internalID: 1939409270
       vertices: []
       indices: 
       edges: []
@@ -469,22 +427,20 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Sword_0: -1377788306
-      Sword_1: 664481018
-      Sword_10: -496038736
-      Sword_11: 1901571339
-      Sword_12: 1160684771
-      Sword_13: 491956569
-      Sword_14: 1984035967
-      Sword_15: 562675438
-      Sword_2: 1435870532
-      Sword_3: -366003885
-      Sword_4: -1815462673
-      Sword_5: 431815444
-      Sword_6: -1924084094
-      Sword_7: -1201057078
-      Sword_8: 380396135
-      Sword_9: 1349187142
+      Blue: 761084936
+      Coin1: -2001089823
+      DonutPlains1_DONE_0: -1758975080
+      DonutPlains1_DONE_13: 1939409270
+      DonutPlains1_DONE_3: 431505779
+      DonutPlains1_DONE_4: -545450068
+      DonutPlains1_DONE_5: 1607940295
+      DonutPlains1_DONE_7: -1804461436
+      DonutPlains1_DONE_8: -684189139
+      DonutPlains1_DONE_9: 400228368
+      Green: 1908881513
+      Key: -420958382
+      Red: 977498685
+      coin2: -1675039939
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

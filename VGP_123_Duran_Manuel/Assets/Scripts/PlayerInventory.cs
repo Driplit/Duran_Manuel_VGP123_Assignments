@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerInventory : MonoBehaviour, IInventory
 {
-    public int Dager { get => _dager; set => _dager = value; }
+    [SerializeField] public int Dager { get => _dager; set => _dager = value; }
 
     private int _dager = 0;
 }

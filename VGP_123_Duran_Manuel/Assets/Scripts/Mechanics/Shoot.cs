@@ -5,10 +5,10 @@ using UnityEngine;
 public class Shoot : MonoBehaviour
 {
     SpriteRenderer sr;
-    IInventory inventory;
-  
+   
+    
     [SerializeField]public Vector2 initalShotVelocity = Vector2.zero;
-    [SerializeField] public int ammo;
+    [SerializeField]IInventory inventory;
     
 
     public Transform spawnPointRight;
@@ -22,7 +22,7 @@ public class Shoot : MonoBehaviour
     {
         sr = GetComponent<SpriteRenderer>();
         inventory = GetComponent<IInventory>();
-        
+       
 
         if (initalShotVelocity == Vector2.zero)
         {
@@ -38,7 +38,7 @@ public class Shoot : MonoBehaviour
     public void Fire()
     {
         // Check if the inventory has daggers available to fire
-        if (inventory != null && inventory.Dager > 0)
+        if (inventory != null && inventory.Dager> 0)
         {
             // Instantiate the projectile based on the facing direction
             Projectile curProjectile;
@@ -54,7 +54,7 @@ public class Shoot : MonoBehaviour
             }
 
             // Decrease dagger count in inventory
-            inventory.Dager -= 1;
+            inventory.Dager = inventory.Dager - 1;
             Debug.Log("Dagger fired! Remaining daggers: " + inventory.Dager);
         }
         else

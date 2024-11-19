@@ -16,7 +16,6 @@ public class Jump : MonoBehaviour
     float maxHoldTime = 0.5f;
     float jumpInputTime = 0;
     float calculatedJumpForce;
-
     public bool jumpCancelled = false;
     // Start is called before the first frame update
     void Start()
@@ -31,7 +30,9 @@ public class Jump : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (pc.isGrounded) jumpCancelled = false;
+        
+
+        if (pc.isGrounded)jumpCancelled = false; 
 
         if (Input.GetButtonDown("Jump")) jumpInputTime = Time.time;
         if (Input.GetButton("Jump")) timeHeld += Time.deltaTime;
@@ -39,9 +40,10 @@ public class Jump : MonoBehaviour
         {
             timeHeld = 0;
             jumpInputTime = 0;
-
             if (rb.velocity.y < -10) return;
             jumpCancelled = true;
+            
+
         }
 
         if (jumpInputTime != 0 && (jumpInputTime + timeHeld) < (jumpInputTime + maxHoldTime))
