@@ -4,18 +4,20 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Ground
+  - Pickup
+  - Mushroom_Green
+  - BulletBill
   - Wall
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Ground
+  - 
   - Water
   - UI
-  - Wall
-  - 
-  - 
+  - Ground
+  - Enemy
+  - Turrets
   - 
   - 
   - 
