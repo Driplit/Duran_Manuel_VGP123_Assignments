@@ -8,6 +8,8 @@ TagManager:
   - Mushroom_Green
   - BulletBill
   - Wall
+  - Squish
+  - Barrier
   layers:
   - Default
   - TransparentFX

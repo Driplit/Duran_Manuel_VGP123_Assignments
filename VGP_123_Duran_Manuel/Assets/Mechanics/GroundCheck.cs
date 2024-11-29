@@ -6,7 +6,6 @@ using UnityEngine;
 public class GroundCheck : MonoBehaviour
 {
     [SerializeField] private Transform groundCheck;
-    [SerializeField, Range(0.01f, 1)] private float groundCheckRadius = 0.02f;
     [SerializeField] private LayerMask groundCheckLayerMask;
 
     // Start is called before the first frame update
@@ -23,11 +22,27 @@ public class GroundCheck : MonoBehaviour
             groundCheck = newGameObject.transform;
         }
     }
-    
+
     public bool IsGrounded()
     {
         if (!groundCheck) return false;
-        return Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundCheckLayerMask);
+
+        // Assuming groundCheck is the transform of the object where the ground detection happens
+        // Assuming boxCollider is the BoxCollider2D component attached to your object
+        BoxCollider2D boxCollider = GetComponent<BoxCollider2D>();
+        if (!boxCollider) return false;
+
+        // Cast a box slightly below the collider to check for ground
+        Vector2 boxCenter = (Vector2)groundCheck.position + boxCollider.offset;
+        Vector2 boxSize = boxCollider.size;
+        float raycastDistance = 0.1f; // Small distance below the collider
+        Vector2 raycastDirection = Vector2.down; // Check downwards
+
+        // Perform the BoxCast
+        RaycastHit2D hit = Physics2D.BoxCast(boxCenter, boxSize, 0f, raycastDirection, raycastDistance, groundCheckLayerMask);
+
+        // Return true if a collider was hit
+        return hit.collider != null;
     }
-    
+
 }

@@ -191,8 +191,8 @@ TextureImporter:
         serializedVersion: 2
         x: 92
         y: 418
-        width: 15
-        height: 15
+        width: 16
+        height: 16
       alignment: 5
       pivot: {x: 1, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -202,6 +202,27 @@ TextureImporter:
       bones: []
       spriteID: e850074e6c9911f4f9335651a8130ff9
       internalID: 1315332073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Checkpoint
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 418
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46ff1f66ccd46854da78c76626da63d4
+      internalID: -103669581
       vertices: []
       indices: 
       edges: []
@@ -217,6 +238,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      Checkpoint: -103669581
       FireFlower: 198342640
       Flag: 1315332073
       Mushroom_Green: -1000672933

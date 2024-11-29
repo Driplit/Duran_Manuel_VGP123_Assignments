@@ -20,8 +20,6 @@ public class PlayerController : MonoBehaviour
     //Movement variables
     [Range(3, 10)]
     public float speed = 5.5f;
-    [Range(3, 10)]
-    public float jumpForce = 3f;
     //Inventory
 
     public bool isBig = false;
@@ -44,13 +42,13 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         AnimatorClipInfo[] curPlayingClips = anim.GetCurrentAnimatorClipInfo(0);
-        IsGrounded();
         Mushroom();
         
 
         float hInput = Input.GetAxis("Horizontal");
-
+        IsGrounded();
         if (curPlayingClips.Length > 0)
         {
             if (!(curPlayingClips[0].clip.name == "Player_Attack"))
@@ -74,9 +72,8 @@ public class PlayerController : MonoBehaviour
         if (Input.GetButtonDown("Fire2")) anim.SetTrigger("ThrowAttack");
         //alternate way to sprite flip
         //if (hInput > 0 && sr.flipX || hInput < 0 && !sr.flipX) sr.flipX = !sr.flipX;
-
-        anim.SetBool("Run", hInput != 0);
         anim.SetBool("onGround", isGrounded);
+        anim.SetBool("Run", hInput != 0);
         anim.SetBool("isSmall", power.Small);
         anim.SetBool("isBig", power.Large);
         anim.SetBool("FireFlower", power.FireFlower);

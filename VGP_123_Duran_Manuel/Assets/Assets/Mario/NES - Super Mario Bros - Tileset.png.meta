@@ -165,7 +165,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flag_Pole
+      name: errror
       rect:
         serializedVersion: 2
         x: 0
@@ -563,6 +563,69 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Flag_Pole_Top
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 518
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74a68877f888066408f64104b45442cf
+      internalID: 1930351999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flag_Poler
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 501
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b42099e63e0536541951aee06dbba5eb
+      internalID: -1262486241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Super Mario Bros - Tileset_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 150
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceec5e1cc9702a14c8cd1f5468300ebe
+      internalID: 1102252282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -580,11 +643,13 @@ TextureImporter:
       Cannon_Extend: 470581677
       Cannon_neck: -210067304
       Cannon_top: -2141998932
-      Flag_Pole: 680368086
+      Flag_Pole_Top: 1930351999
+      Flag_Poler: -1262486241
       Grounc_HardBrick: -320462023
       Ground_Brick: 710785372
       NES - Super Mario Bros - Tileset_0: 226947898
       NES - Super Mario Bros - Tileset_1: 350263247
+      NES - Super Mario Bros - Tileset_2: 1102252282
       Pipe_Bot: 690285827
       Pipe_Connect_Bot: 1344419905
       Pipe_Connect_Top: 1064114967
@@ -595,6 +660,7 @@ TextureImporter:
       Pipe_Open_Top_Right: 718277422
       Pipe_Right: 1420970929
       Pipe_Top: -2039920394
+      errror: 680368086
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
