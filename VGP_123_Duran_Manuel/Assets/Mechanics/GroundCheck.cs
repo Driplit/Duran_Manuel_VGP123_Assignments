@@ -39,7 +39,7 @@ public class GroundCheck : MonoBehaviour
         Vector2 raycastDirection = Vector2.down; // Check downwards
 
         // Perform the BoxCast
-        RaycastHit2D hit = Physics2D.BoxCast(boxCenter, boxSize, 0f, raycastDirection, raycastDistance, groundCheckLayerMask);
+        RaycastHit2D hit = Physics2D.BoxCast(boxCenter, boxSize, 0.1f, raycastDirection, raycastDistance, groundCheckLayerMask);
 
         // Return true if a collider was hit
         return hit.collider != null;

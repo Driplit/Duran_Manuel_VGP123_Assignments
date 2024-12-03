@@ -36,9 +36,8 @@ public class WalkingEnemy : Enemy
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Barrier"))
+        if (collision.CompareTag("Wall"))
         {
-            anim.SetTrigger("TurnAround");
             sr.flipX = !sr.flipX;
         }
     }

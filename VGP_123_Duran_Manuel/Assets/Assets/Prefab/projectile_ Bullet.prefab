@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8946483472029742115}
   - component: {fileID: 5176578776522616764}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: GameObject
-  m_TagString: Squish
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -91,9 +91,9 @@ GameObject:
   - component: {fileID: -1070087752650618801}
   - component: {fileID: -6953093809490099135}
   - component: {fileID: -5921047902297777400}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: projectile_ Bullet
-  m_TagString: BulletBill
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -208,7 +208,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 448
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -222,7 +222,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
