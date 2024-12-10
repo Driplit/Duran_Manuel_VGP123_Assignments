@@ -51,6 +51,7 @@ GameObject:
   - component: {fileID: 1978563117228252190}
   - component: {fileID: 1381742988163222454}
   - component: {fileID: 6325716498117524258}
+  - component: {fileID: 4840266388842974993}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -327,6 +328,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerFeet: {fileID: 2942167959568124345}
   bounceForce: 10
+--- !u!114 &4840266388842974993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3016611966737090430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21a879ccb72a95e4ea868a30f2bd9494, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lives: 3
 --- !u!1 &3684601918178588034
 GameObject:
   m_ObjectHideFlags: 0
